@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Twitter Trending Topics</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for fixed header */
+        header {
+            height: 50px; /* Set the height of the header */
+        }
+
+        /* Make the section take up the remaining space */
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Ensure the body takes up the full viewport height */
+        }
+
+        section {
+            flex-grow: 1; /* Make the section take up remaining space */
+        }
+    </style>
+</head>
+
+<body class="bg-danger">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-primary bg-secondary">
+            <div class="container-fluid text-center d-flex justify-content-center align-items-center">
+                <h1 class="text-info">Twitter Trending Topics</h1>
+            </div>
+        </nav>
+    </header>
+    <section class="d-flex flex-column justify-content-around align-items-center bg-info">
+        <div class="p-3 text-center bg-secondary text-info">{{ head1 }}</div>
+        <div class="p-3 text-center bg-secondary text-info">{{ head2 }}</div>
+        <div class="p-3 text-center bg-secondary text-info">{{ head3 }}</div>
+        <div class="p-3 text-center bg-secondary text-info">{{ head4 }}</div>
+        <div class="p-3 text-center bg-secondary text-info">{{ head5 }}</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+<!-- <ul>
+        <li>{{ head1 }}</li>
+        <li>{{ head2 }}</li>
+        <li>{{ head3 }}</li>
+        <li>{{ head4 }}</li>
+        <li>{{ head5 }}</li>
+    </ul> -->
